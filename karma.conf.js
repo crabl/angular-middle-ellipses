@@ -55,6 +55,7 @@ module.exports = function(config) {
       'PhantomJS'
     ],
     singleRun: true,
-    concurrency: Infinity
+    concurrency: Infinity,
+    browserNoActivityTimeout: 10000 * 10
   });
 };
