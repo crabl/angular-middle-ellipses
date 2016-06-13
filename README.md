@@ -19,6 +19,14 @@ $ npm install --save angular-middle-ellipses
 Documentation
 -------------
 
+Add `angular-middle-ellipses` to your Angular module dependency list:
+
+```js
+var MyApp = angular.module('MyApp', [
+  require('angular-middle-ellipses')
+]);
+```
+
 Make use of the `middleEllipses` filter in a template by passing the desired maximum amount of characters as an argument:
 
 ```js
