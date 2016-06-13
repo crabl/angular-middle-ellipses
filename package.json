@@ -1,0 +1,44 @@
+{
+  "name": "angular-middle-ellipses",
+  "version": "1.0.0",
+  "description": "Truncate a string by showing an ellipses in the middle",
+  "main": "index.js",
+  "homepage": "https://github.com/jviotti/angular-middle-ellipses",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jviotti/angular-middle-ellipses.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run lint && karma start",
+    "lint": "jshint --config .jshintrc --reporter unix index.js test.spec.js karma.conf.js"
+  },
+  "keywords": [
+    "angular",
+    "ellipses",
+    "truncate",
+    "long",
+    "middle"
+  ],
+  "author": "Juan Cruz Viotti <jviottidc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "angular-mocks": "^1.5.6",
+    "browserify": "^13.0.1",
+    "jsdoc-to-markdown": "^1.1.1",
+    "jshint": "^2.9.1",
+    "jsverify": "^0.7.1",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.5",
+    "karma-mocha": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "^2.5.3",
+    "mochainon": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}
