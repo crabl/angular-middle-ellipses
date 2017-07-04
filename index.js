@@ -35,7 +35,7 @@ var AngularMiddleEllipses = angular.module(MODULE_NAME, []);
 // Exposed for testability purposes
 AngularMiddleEllipses.constant('MIDDLE_ELLIPSES_CHARACTER', '…');
 
-AngularMiddleEllipses.filter('middleEllipses', function(MIDDLE_ELLIPSES_CHARACTER) {
+AngularMiddleEllipses.filter('middleEllipses', ['MIDDLE_ELLIPSES_CHARACTER', function(MIDDLE_ELLIPSES_CHARACTER) {
 
   /**
    * @summary Middle ellipses filter
@@ -82,6 +82,6 @@ AngularMiddleEllipses.filter('middleEllipses', function(MIDDLE_ELLIPSES_CHARACTE
     return finalLeftPart + MIDDLE_ELLIPSES_CHARACTER + finalRightPart;
   };
 
-});
+}]);
 
 module.exports = MODULE_NAME;
